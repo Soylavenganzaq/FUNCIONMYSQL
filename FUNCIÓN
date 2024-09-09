@@ -12,3 +12,6 @@ RETURNS INT
 END //
 
 DELIMITER ;
+
+
+Esta función permite contar la cantidad de veces que un usuario ha arrendado un parqueadero en la aplicación  
