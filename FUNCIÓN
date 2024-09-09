@@ -1,0 +1,14 @@
+CREATE FUNCTION contar_parqueaderos_usuario(user_name VARCHAR(40))
+RETURNS INT
+
+     num_parqueaderos INT;
+
+    -- Contar cuántos parqueaderos ha arrendado el usuario
+    SELECT COUNT(*) INTO num_parqueaderos
+    FROM ArrendamientoParqueadero
+    WHERE usuario = user_name;
+
+    RETURN num_parqueaderos;
+END //
+
+DELIMITER ;
